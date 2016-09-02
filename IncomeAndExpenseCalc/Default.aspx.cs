@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -36,10 +37,8 @@ public partial class _Default : System.Web.UI.Page
     private void CalculateDisposableIncome()
     {
         double total, totalIncome, totalExp, utilities, tvandothers;
-        string chartType = "pie";
-        Type Income = GetType();
-        Type Expenses = GetType();
-
+        //string chartType = "pie";
+        
 
         salary = getUserData(SalaryTextBox);
         addIncome = getUserData(AdditionalIncomeTextBox);
@@ -62,9 +61,15 @@ public partial class _Default : System.Web.UI.Page
 
         total = totalIncome - totalExp;
 
-        ClientScript.RegisterStartupScript(this.GetType(), "draw", "drawIncome('" + chartType + "','" + salary + "','" + addIncome + "','" + totalIncome + "');", true);
+        StringBuilder incomeString = new StringBuilder();
+        incomeString.Append("drawIncome('pie'," + salary + "," + addIncome + "," + totalIncome + ");");
+        StringBuilder expenseString = new StringBuilder();
+        expenseString.Append("drawExp('pie'," + mortgage + "," + utilities + "," + tvandothers + "," + petrol + "," + insurance + "," + otherExp + "," + totalExp + ");" );
 
-        ClientScript.RegisterStartupScript(this.GetType(), "draw1", "drawExp('" + chartType + "','" + mortgage + "','" + utilities + "','" + tvandothers + "','" + petrol + "','" + insurance + "','" + otherExp + "','" + totalExp + "');", true);
+
+        ClientScript.RegisterStartupScript(this.GetType(), "draw", incomeString.ToString(), true);
+
+        ClientScript.RegisterStartupScript(this.GetType(), "draw1", expenseString.ToString(), true);
 
         //ClientScript.RegisterStartupScript(this.GetType(), "draw", "drawChart('" + chartType + "','" + salary + "','" + addIncome + "','" + totalIncome + "');", true);
 
