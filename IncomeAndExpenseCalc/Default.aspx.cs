@@ -66,7 +66,8 @@ public partial class _Default : System.Web.UI.Page
 
         ClientScript.RegisterStartupScript(this.GetType(), "draw1", "drawExp('" + chartType + "','" + mortgage + "','" + utilities + "','" + tvandothers + "','" + petrol + "','" + insurance + "','" + otherExp + "','" + totalExp + "');", true);
 
-        
+        //ClientScript.RegisterStartupScript(this.GetType(), "draw", "drawChart('" + chartType + "','" + salary + "','" + addIncome + "','" + totalIncome + "');", true);
+
     }
 
 
