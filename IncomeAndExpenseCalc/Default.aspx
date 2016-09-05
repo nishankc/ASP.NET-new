@@ -10,6 +10,7 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/jquery-3.1.0.js"></script>
+    <link href="Content/StyleSheet.css" rel="stylesheet" />
     <title></title>
 </head>
 <body>
@@ -76,8 +77,8 @@
         
         
         
-                <div class="center-block col-md-1">
-                    <br /><br /><br /><br /><br /><br /><br />
+                <div class="col-md-1">
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                     <asp:Button ID="CalculateButton" runat="server" Text="Calculate" OnClick="CalculateButton_Click" CssClass="btn btn-primary center-block" />
                 </div>
         
