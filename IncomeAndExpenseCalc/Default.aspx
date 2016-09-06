@@ -5,17 +5,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     
+    <meta name="viewport" content="width=deivce-width, initial-scale=1" />
     <script src="Scripts/canvasjs.min.js"></script>
     <script src="Scripts/ChartCreation.js"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/jquery-3.1.0.js"></script>
+    <link href="Content/StyleChart.css" rel="stylesheet" />
     <title></title>
 </head>
 <body>
     <div class="container">
         <div>
-            <h1>Income and Expenses Calculator</h1>
+            <h1 class="text-center">Income and Expenses Calculator</h1>
             <br />
             <h3>Enter your estimated montly income and expenses, this will then total both and show show much disposable income is remaining. Only fill out the details relevant to you, other fields can be left blank</h3>
         </div>
