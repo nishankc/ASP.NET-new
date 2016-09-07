@@ -1,5 +1,7 @@
 ﻿.canvasjs-chart-tooltip{
 
-    left: 202px !important;
-    bottom: -222px !important;
+    left: 10px !important;
+    bottom: -10px !important;
+    height: 100px !important;
+    border-radius: 10px !important;
 }

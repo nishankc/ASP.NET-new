@@ -62,18 +62,18 @@ drawExp = function (chartType, mortage, utilities, tvandothers, insurance, petro
                 indexLabel: "{y} %",
                 dataPoints: [
                     { indexLabel: "Mortgage/Rent", y: parseFloat(mortage) },
-                    { indexLabel: "Utilities", y: parseFloat(utilities)},
+                    { indexLabel: "Utilities", y: parseFloat(utilities) },
                     { indexLabel: "Tv/Phone/Internet", y: parseFloat(tvandothers) },
-                    { indexLabel: "Insurance", y: parseFloat(insurance),},
+                    { indexLabel: "Insurance", y: parseFloat(insurance), },
                     { indexLabel: "Petrol", y: parseFloat(petrol), },
                     { indexLabel: "Other", y: parseFloat(other), }
-            ]
-        }
+                ]
+            }
             ]
         });
 
         chartExp.render();
-        
+
 
     }
 }

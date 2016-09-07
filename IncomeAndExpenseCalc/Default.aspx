@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+﻿<%@ page language="C#" autoeventwireup="true" inherits="_Default" %>
 
 <!DOCTYPE html>
 
@@ -11,6 +11,7 @@
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/jquery-3.1.0.js"></script>
     <link href="Content/StyleSheet.css" rel="stylesheet" />
+    <link href="Content/StyleChart.css" rel="stylesheet" />
     <title></title>
 </head>
 <body>
